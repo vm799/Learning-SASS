@@ -1,0 +1,56 @@
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.grid + .grid {
+  margin-top: 2rem;
+}
+
+.grid-wrap {
+  padding: 2rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+}
+
+span {
+  border: 2px dashed currentcolor;
+  border-radius: 4px;
+  min-height: 15vh;
+  padding: 1rem;
+  color: #0178d4;
+  font-size: 3rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div:nth-child(2) span {
+  color: purple;
+}
+
+div:nth-child(3) span {
+  color: green;
+}
+
+div:nth-child(4) span {
+  color: orangered;
+}
+/*# sourceMappingURL=style.css.map */
