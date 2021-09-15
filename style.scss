@@ -1,5 +1,13 @@
+$color: red;
+
+
+
 $minWidth: 10rem;
 $gridGap: 2rem;
+
+body {
+  background-color: $color;
+}
 
 .grid {
   display: grid;
